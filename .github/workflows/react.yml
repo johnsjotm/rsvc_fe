@@ -22,5 +22,5 @@ jobs:
               cd /home/ubuntu/ &&
               git clone git@github.com:johnsjotm/rsvc_fe.git &&
               cd /home/ubuntu/rsvc_fe &&
-              git checkout main && docker compose up -d --no-deps --force-recreate --build react-app
+              git checkout main && docker compose up -d --no-deps --force-recreate --build
               '
