@@ -3,7 +3,7 @@ name: Run react application
 on:
   push:
     branches:
-      - production
+      - main
 
 jobs:
   run-application-on-container:
