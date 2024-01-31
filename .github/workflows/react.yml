@@ -20,7 +20,7 @@ jobs:
           echo "$PRIVATE_KEY" > private_key && chmod 600 private_key
           ssh -o StrictHostKeyChecking=no -i private_key ${USER_NAME}@${HOSTNAME} '
               cd /home/ubuntu/ &&
-              git clone git@github.com:appdeltasoft/rsvc_fe.git &&
+              git clone git@github.com:johnsjotm/rsvc_fe.git &&
               cd /home/ubuntu/rsvc_fe &&
               git checkout production && docker compose up -d --no-deps --force-recreate --build react-app
               '
