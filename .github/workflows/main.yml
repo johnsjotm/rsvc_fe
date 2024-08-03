@@ -20,7 +20,10 @@ jobs:
           node-version: '14'
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install
+          npm install @babel/plugin-proposal-private-property-in-object --save-dev
+          npm install @chakra-ui/system --save
         working-directory: .
 
       - name: Build React App
